@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Hamida Noor Kalila — Software Engineering Student & Portfolio</title>
+  <meta name="description"
+    content="Portfolio website of Hamida Noor Kalila, a Software Engineering student passionate about Backend Development, JavaScript, and Node.js.">
+  <meta name="keywords" content="Hamida Noor Kalila, Software Engineering, Backend Developer, Portfolio, JavaScript, Node.js">
+  <meta name="author" content="Hamida Noor Kalila">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hamida Noor Kalila — Portfolio">
+  <meta property="og:description"
+    content="Software Engineering student passionate about Backend Development, JavaScript, and Node.js.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamidanoorkalila.github.io">
+  <meta property="og:image" content="images/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <h2>Kalila.</h2>
+      <p>Loading something beautiful...</p>
+    </div>
+  </div>
+
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button id="topBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="logo">Kalila<span>.</span></a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn-contact">Contact Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <p class="hero-greeting">Hello There 👋</p>
+        <h1 class="hero-name">I'm <span>Hamida Noor Kalila</span></h1>
+        <p class="hero-role">
+          <span id="typing"></span><span class="cursor-blink"></span>
+        </p>
+        <p class="hero-desc">
+          A Software Engineering student with a growing passion for Backend Development.
+          I love building things, solving problems, and continuously learning new technologies.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn-primary">
+            <i class="fa-solid fa-user"></i> About Me
+          </a>
+          <a href="#projects" class="btn-secondary">
+            <i class="fa-solid fa-code"></i> Projects
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="fa-solid fa-envelope"></i> Contact
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image fade-in">
+        <div class="photo-frame">
+          <!-- Replace with your own profile photo -->
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop&crop=face"
+            alt="Profile photo of Hamida Noor Kalila">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ME ==================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Get to Know Me</h2>
+        <p class="section-subtitle">A glimpse into who I am and what drives my passion for technology.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper fade-in">
+          <div class="about-image">
+            <!-- Replace with your own photo -->
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
+              alt="About photo of Hamida Noor Kalila">
+          </div>
+        </div>
+
+        <div class="about-text fade-in">
+          <h3>Hamida Noor Kalila</h3>
+          <p>
+            I'm a Software Engineering student who has been exploring the world of technology for about 2 years.
+            My journey started with UI/UX Design and Frontend Development — I loved crafting beautiful, user-friendly
+            interfaces.
+          </p>
+          <p>
+            Over time, I discovered a deeper interest in Backend Development. The logic, the problem-solving,
+            and the complexity of building systems behind the scenes fascinate me. I'm currently focused on
+            learning JavaScript and Node.js to strengthen my backend skills.
+          </p>
+          <p>
+            I'm still at the beginning of my backend journey, but I bring a strong willingness to learn,
+            a love for challenges, and a genuine enjoyment of the thinking process that comes with building software.
+          </p>
+
+          <div class="about-tags">
+            <span class="about-tag">🎓 Student</span>
+            <span class="about-tag">💻 Software Engineering</span>
+            <span class="about-tag">🔧 Backend Learner</span>
+            <span class="about-tag">🎨 UI/UX Enthusiast</span>
+            <span class="about-tag">🧩 Problem Solver</span>
+            <span class="about-tag">📚 Lifelong Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== JOURNEY ==================== -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Learning Timeline</h2>
+        <p class="section-subtitle">Every step of my learning journey has shaped who I am today.</p>
+      </div>
+
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Early 2024</span>
+          <div class="timeline-content">
+            <h4>🚀 Started Software Engineering</h4>
+            <p>Took my first step into the world of programming and fell in love with the process of creating things with code.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Mid 2024</span>
+          <div class="timeline-content">
+            <h4>🌐 Learning HTML & CSS</h4>
+            <p>Built my first web pages and discovered the joy of turning designs into real, visual layouts.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Late 2024</span>
+          <div class="timeline-content">
+            <h4>🎨 UI/UX Design Phase</h4>
+            <p>Fell in love with designing beautiful interfaces. Learned about color theory, typography, and user experience.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Early 2025</span>
+          <div class="timeline-content">
+            <h4>⚡ Learning JavaScript</h4>
+            <p>Started learning JavaScript to make websites interactive. This opened a whole new world of possibilities.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Mid 2025</span>
+          <div class="timeline-content">
+            <h4>🔧 Discovering Backend Development</h4>
+            <p>Started exploring Node.js and discovered my passion for backend logic, APIs, and server-side programming.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Late 2025</span>
+          <div class="timeline-content">
+            <h4>📦 Building REST APIs</h4>
+            <p>Created my first simple REST APIs. Learned about routing, middleware, and working with databases.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2026 — Present</span>
+          <div class="timeline-content">
+            <h4>🌱 Still Growing</h4>
+            <p>Continuing to learn, build projects, and improve every day. The journey is far from over — and that's exciting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">My Skills</span>
+        <h2 class="section-title">What I'm Learning</h2>
+        <p class="section-subtitle">Honest progress — I'm still growing, and that's perfectly okay.</p>
+      </div>
+
+      <div class="skills-grid fade-in">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4>HTML</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="80"></div>
+          </div>
+          <span class="skill-level">Comfortable</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h4>CSS</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="75"></div>
+          </div>
+          <span class="skill-level">Comfortable</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="55"></div>
+          </div>
+          <span class="skill-level">Learning</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+          <h4>Node.js</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="35"></div>
+          </div>
+          <span class="skill-level">Beginner</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h4>Git</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="50"></div>
+          </div>
+          <span class="skill-level">Learning</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+          <h4>GitHub</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="50"></div>
+          </div>
+          <span class="skill-level">Learning</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h4>Responsive Design</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="65"></div>
+          </div>
+          <span class="skill-level">Growing</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+          <h4>UI Design</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="60"></div>
+          </div>
+          <span class="skill-level">Growing</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h4>Problem Solving</h4>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-level="55"></div>
+          </div>
+          <span class="skill-level">Developing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">My Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <p class="section-subtitle">Small projects that helped me grow. Each one taught me something new.</p>
+      </div>
+
+      <div class="projects-grid fade-in">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Replace with your own project screenshot -->
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop"
+              alt="Personal Portfolio project screenshot">
+          </div>
+          <div class="project-info">
+            <h4>Personal Portfolio</h4>
+            <p>My personal portfolio website showcasing my journey, skills, and projects as a Software Engineering student.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Replace with your own project screenshot -->
+            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
+              alt="To Do App project screenshot">
+          </div>
+          <div class="project-info">
+            <h4>To Do App</h4>
+            <p>A clean and functional to-do list application with add, edit, delete, and filter features.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Replace with your own project screenshot -->
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop"
+              alt="Student Management project screenshot">
+          </div>
+          <div class="project-info">
+            <h4>Student Management</h4>
+            <p>A student management system with CRUD operations for managing student records and grades.</p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Replace with your own project screenshot -->
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop"
+              alt="Simple REST API project screenshot">
+          </div>
+          <div class="project-info">
+            <h4>Simple REST API</h4>
+            <p>A RESTful API built with Node.js and Express for handling basic data operations and routing.</p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAVORITE THINGS ==================== -->
+  <section id="favorites">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Fun Facts</span>
+        <h2 class="section-title">Favorite Things</h2>
+        <p class="section-subtitle">A little peek into the things that make me happy outside of coding.</p>
+      </div>
+
+      <div class="favorites-grid fade-in">
+        <!-- Fav 1 -->
+        <div class="fav-card">
+          <div class="fav-thumb">
+            <!-- Replace with your own food photo -->
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop"
+              alt="Dimsum Mentai — favorite food">
+          </div>
+          <div class="fav-info">
+            <span class="fav-category">Favorite Food</span>
+            <h4>Dimsum Mentai</h4>
+            <p>Crispy dimsum with creamy mentai sauce — the perfect comfort food.</p>
+          </div>
+        </div>
+
+        <!-- Fav 2 -->
+        <div class="fav-card">
+          <div class="fav-thumb">
+            <!-- Replace with your own food photo -->
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop"
+              alt="Brownies — favorite food">
+          </div>
+          <div class="fav-info">
+            <span class="fav-category">Favorite Food</span>
+            <h4>Brownies</h4>
+            <p>Rich, fudgy brownies — the kind that melts in your mouth.</p>
+          </div>
+        </div>
+
+        <!-- Fav 3 -->
+        <div class="fav-card">
+          <div class="fav-thumb">
+            <!-- Replace with your own color aesthetic photo -->
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=400&h=300&fit=crop"
+              alt="Soft Pink — favorite color">
+          </div>
+          <div class="fav-info">
+            <span class="fav-category">Favorite Color</span>
+            <h4>Soft Pink</h4>
+            <p>Gentle, warm, and calming — just like the aesthetic I love.</p>
+          </div>
+        </div>
+
+        <!-- Fav 4 -->
+        <div class="fav-card">
+          <div class="fav-thumb">
+            <!-- Replace with your own color aesthetic photo -->
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop"
+              alt="Cream & Pastel — favorite colors">
+          </div>
+          <div class="fav-info">
+            <span class="fav-category">Favorite Color</span>
+            <h4>Cream & Pastel</h4>
+            <p>Soft cream and pastel tones — elegant, minimal, and timeless.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Gallery</span>
+        <h2 class="section-title">Captured Moments</h2>
+        <p class="section-subtitle">A few photos from my life — to be filled with my own memories.</p>
+      </div>
+
+      <div class="gallery-grid fade-in">
+        <!-- Replace all images with your own photos -->
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=400&fit=crop"
+            alt="Gallery photo 1">
+          <div class="gallery-overlay"><span>Moment 1</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
+            alt="Gallery photo 2">
+          <div class="gallery-overlay"><span>Moment 2</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=400&fit=crop"
+            alt="Gallery photo 3">
+          <div class="gallery-overlay"><span>Moment 3</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop"
+            alt="Gallery photo 4">
+          <div class="gallery-overlay"><span>Moment 4</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=400&fit=crop"
+            alt="Gallery photo 5">
+          <div class="gallery-overlay"><span>Moment 5</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=400&fit=crop"
+            alt="Gallery photo 6">
+          <div class="gallery-overlay"><span>Moment 6</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Feel free to reach out — I'd love to connect with you.</p>
+      </div>
+
+      <div class="contact-grid fade-in">
+        <a href="mailto:kalila@example.com" class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-detail">
+            <h4>Email</h4>
+            <!-- Replace with your real email -->
+            <p>kalila@example.com</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="contact-detail">
+            <h4>GitHub</h4>
+            <!-- Replace with your GitHub username -->
+            <p>github.com/kalila</p>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="contact-detail">
+            <h4>Instagram</h4>
+            <!-- Replace with your Instagram handle -->
+            <p>@kalila</p>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="contact-detail">
+            <h4>LinkedIn</h4>
+            <!-- Replace with your LinkedIn profile -->
+            <p>Hamida Noor Kalila</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & built with <span>♥</span> by Hamida Noor Kalila &copy; 2026</p>
+      <div class="footer-links">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
