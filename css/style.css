@@ -1134,10 +1134,7 @@ section {
   box-shadow: 0 8px 28px rgba(212, 134, 156, 0.5);
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
-
+/*RESPONSIVE DESIGN*/
 /* Large Tablets / Small Laptops */
 @media (max-width: 1024px) {
   .navbar {

@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
   // ========== Active Nav Link on Scroll ==========
   function highlightActiveLink() {
     const scrollPos = window.scrollY + 120;
@@ -92,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', highlightActiveLink);
   highlightActiveLink(); // Run on load
 
-
   // ========== Hamburger Menu (Mobile) ==========
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
@@ -109,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.classList.remove('active');
     }
   });
-
 
   // ========== Dark Mode Toggle ==========
   const darkToggle = document.getElementById('darkToggle');
@@ -135,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('theme', 'dark');
     }
   });
-
 
   // ========== Typing Effect ==========
   const typingElement = document.getElementById('typing');
@@ -184,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start typing effect
   typeEffect();
 
-
   // ========== Fade-In Animation (Intersection Observer) ==========
   const fadeElements = document.querySelectorAll('.fade-in');
 
@@ -201,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   fadeElements.forEach(el => fadeObserver.observe(el));
-
 
   // ========== Skill Bar Animation ==========
   const skillBars = document.querySelectorAll('.skill-bar-fill');
