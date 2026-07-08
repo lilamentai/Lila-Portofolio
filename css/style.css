@@ -741,6 +741,16 @@ section {
   line-height: 1.6;
 }
 
+.timeline-translation {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--text-subtle);
+  opacity: 0.7;
+  font-style: italic;
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
 /* ---------- Skills Section ---------- */
 #skills {
   background: var(--bg-secondary);
