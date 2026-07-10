@@ -606,6 +606,7 @@ section {
   overflow: hidden;
 }
 
+/* Background Image Layer */
 #about::before {
   content: '';
   position: absolute;
@@ -614,30 +615,29 @@ section {
   right: -20px;
   bottom: -20px;
   background: url('https://i.pinimg.com/736x/76/1f/4b/761f4b230841f37f3eccda51d997f505.jpg') center/cover no-repeat;
-  filter: blur(8px) brightness(0.4);
+  filter: blur(6px);
   z-index: 0;
+}
+
+/* Light Overlay for Frosted Glass Effect */
+#about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 248, 243, 0.75); /* matches light theme */
+  z-index: 0;
+}
+
+[data-theme="dark"] #about::after {
+  background: rgba(26, 21, 32, 0.85); /* matches dark theme */
 }
 
 #about .container {
   position: relative;
   z-index: 1;
-}
-
-#about .section-label {
-  color: #F2C4D6; /* A soft pink to match the theme */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-#about .section-title,
-#about .about-text h3 {
-  color: #ffffff !important;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-#about .section-subtitle,
-#about .about-text p {
-  color: #eaeaea !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .about-grid {
