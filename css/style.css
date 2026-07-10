@@ -601,7 +601,43 @@ section {
 
 /* ---------- About Section ---------- */
 #about {
-  background: var(--bg-secondary);
+  position: relative;
+  background: none;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: url('https://i.pinimg.com/736x/76/1f/4b/761f4b230841f37f3eccda51d997f505.jpg') center/cover no-repeat;
+  filter: blur(8px) brightness(0.4);
+  z-index: 0;
+}
+
+#about .container {
+  position: relative;
+  z-index: 1;
+}
+
+#about .section-label {
+  color: #F2C4D6; /* A soft pink to match the theme */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#about .section-title,
+#about .about-text h3 {
+  color: #ffffff !important;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#about .section-subtitle,
+#about .about-text p {
+  color: #eaeaea !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .about-grid {
