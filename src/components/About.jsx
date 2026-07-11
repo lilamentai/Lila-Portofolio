@@ -27,7 +27,7 @@ export default function About() {
             }`}
           >
             <div className="relative w-full max-w-[360px] bg-surface p-3 rounded-[24px] border-[3px] border-dashed border-primary shadow-[16px_16px_0_var(--primary-soft),0_16px_40px_var(--shadow-color)] -rotate-3 transition-all duration-[0.4s] cubic-bezier(0.175,0.885,0.32,1.275) hover:rotate-0 hover:scale-105 hover:shadow-[8px_8px_0_var(--primary-soft),0_20px_40px_var(--shadow-strong)] float-sparkle md:max-w-[300px]">
-              <img src="/images/profile.jpeg" alt="About photo of Hamida Noor Kalila" className="w-full h-full object-cover rounded-[14px]" />
+              <img src="images/profile.jpeg" alt="About photo of Hamida Noor Kalila" className="w-full h-full object-cover rounded-[14px]" />
             </div>
           </div>
 

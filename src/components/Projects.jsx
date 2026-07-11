@@ -6,13 +6,13 @@ export default function Projects() {
 
   const projects = [
     {
-      img: "/images/web1.jpeg",
+      img: "images/web1.jpeg",
       title: "Project DOMS",
       desc: "My first website project showcasing my journey, skills, and projects as a Software Engineering student.",
       tags: ["HTML", "CSS", "PHP"]
     },
     {
-      img: "/images/web2.png",
+      img: "images/web2.png",
       title: "Portfolio",
       desc: "My personal portfolio website built to showcase who I am, my skills, and my projects as a Software Engineering student.",
       tags: ["HTML", "CSS", "JavaScript"]

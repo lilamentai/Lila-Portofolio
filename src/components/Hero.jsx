@@ -111,7 +111,7 @@ export default function Hero() {
           }`}
         >
           <div className="relative w-[320px] h-[380px] rounded-[24px] overflow-hidden border-[3px] border-border shadow-photo bg-gradient-card lg:w-[270px] lg:h-[330px] md:w-[240px] md:h-[290px] sm:w-[200px] sm:h-[250px]">
-            <img src="/images/sekolah1.jpeg" alt="Profile photo of Hamida Noor Kalila" className="w-full h-full object-cover" />
+            <img src="images/sekolah1.jpeg" alt="Profile photo of Hamida Noor Kalila" className="w-full h-full object-cover" />
             <div className="absolute w-[60px] h-[60px] -bottom-5 -right-5 hero-deco-dots opacity-50 -z-10"></div>
           </div>
         </div>

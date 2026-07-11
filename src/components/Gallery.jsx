@@ -5,12 +5,12 @@ export default function Gallery() {
   const [refGrid, isVisibleGrid] = useIntersectionObserver({ triggerOnce: true, threshold: 0.15 });
 
   const photos = [
-    { img: "/images/sekolah2.jpeg", alt: "Gallery photo 1", text: "School Moment" },
-    { img: "/images/sekolah3.jpeg", alt: "Gallery photo 2", text: "School Moment" },
-    { img: "/images/ft1.jpeg", alt: "Gallery photo 3", text: "PKL Moment" },
-    { img: "/images/ft2.jpeg", alt: "Gallery photo 4", text: "Dolan Moment" },
-    { img: "/images/ft4.jpeg", alt: "Gallery photo 5", text: "OTW Moment" },
-    { img: "/images/ft3.jpeg", alt: "Gallery photo 6", text: "Mirror Moment" }
+    { img: "images/sekolah2.jpeg", alt: "Gallery photo 1", text: "School Moment" },
+    { img: "images/sekolah3.jpeg", alt: "Gallery photo 2", text: "School Moment" },
+    { img: "images/ft1.jpeg", alt: "Gallery photo 3", text: "PKL Moment" },
+    { img: "images/ft2.jpeg", alt: "Gallery photo 4", text: "Dolan Moment" },
+    { img: "images/ft4.jpeg", alt: "Gallery photo 5", text: "OTW Moment" },
+    { img: "images/ft3.jpeg", alt: "Gallery photo 6", text: "Mirror Moment" }
   ];
 
   return (
