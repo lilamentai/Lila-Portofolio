@@ -209,4 +209,76 @@
   @keyframes spin {
     to { transform: rotate(360deg); }
   }
+
+  /* ── Hero Photo Background ─────────────────────────── */
+
+
+  /* Overlay semi-transparan pink-cream di atas foto hero */
+  .hero-overlay {
+    /* Mode terang: pink-cream lembut, cukup transparan agar foto terlihat */
+    background: linear-gradient(
+      160deg,
+      rgba(255, 236, 242, 0.82) 0%,
+      rgba(255, 245, 235, 0.78) 50%,
+      rgba(255, 232, 240, 0.82) 100%
+    );
+  }
+
+  [data-theme="dark"] .hero-overlay {
+    /* Mode gelap: ungu-gelap semi-transparan */
+    background: linear-gradient(
+      160deg,
+      rgba(26, 21, 32, 0.85) 0%,
+      rgba(42, 24, 40, 0.80) 50%,
+      rgba(34, 28, 40, 0.85) 100%
+    );
+  }
+
+  /* Warna teks Hero di atas foto */
+  .hero-text-subtle   { color: var(--text-subtle); }
+  .hero-text-heading  { color: var(--text-heading); }
+  .hero-text-primary  { color: var(--primary); }
+  .hero-text-accent   { color: var(--primary-deep); }
+  .hero-text-body     { color: var(--text-subtle); }
+  .hero-cursor        { background-color: var(--primary-deep); }
+
+  /* Tombol sosial hero — menyesuaikan tema */
+  .hero-social-btn {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--border);
+    color: var(--text-subtle);
+    backdrop-filter: blur(6px);
+  }
+  .hero-social-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary-soft);
+    box-shadow: 0 6px 16px var(--shadow-color);
+  }
+  [data-theme="dark"] .hero-social-btn {
+    background: rgba(42, 32, 48, 0.55);
+  }
+
+  /* ── About Section Background ───────────────────────── */
+
+  /* Pastel pink-kuning hangat polos, tanpa gambar dari internet */
+  .about-section {
+    background: linear-gradient(
+      135deg,
+      #FFF3F8 0%,
+      #FFF8E6 40%,
+      #FFF0F5 70%,
+      #FFFAE8 100%
+    );
+  }
+
+  [data-theme="dark"] .about-section {
+    /* Dark mode: tetap nuansa pink-ungu gelap yang lembut */
+    background: linear-gradient(
+      135deg,
+      #1E1520 0%,
+      #221822 40%,
+      #1E1A28 70%,
+      #221C20 100%
+    );
+  }
 }

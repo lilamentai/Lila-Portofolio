@@ -1,4 +1,5 @@
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import profileImg from '/images/profile.jpeg';
 
 export default function About() {
   const [refHeader, isVisibleHeader] = useIntersectionObserver({ triggerOnce: true, threshold: 0.15 });
@@ -6,7 +7,7 @@ export default function About() {
   const [refText, isVisibleText] = useIntersectionObserver({ triggerOnce: true, threshold: 0.15 });
 
   return (
-    <section id="about" className="relative overflow-hidden py-[100px] md:py-[70px] sm:py-[56px]">
+    <section id="about" className="about-section relative overflow-hidden py-[100px] md:py-[70px] sm:py-[56px]">
       <div className="container-custom relative z-10">
         <div
           ref={refHeader}
@@ -26,8 +27,12 @@ export default function About() {
               isVisibleImage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
             }`}
           >
-            <div className="relative w-full max-w-[360px] bg-surface p-3 rounded-[24px] border-[3px] border-dashed border-primary shadow-[16px_16px_0_var(--primary-soft),0_16px_40px_var(--shadow-color)] -rotate-3 transition-all duration-[0.4s] cubic-bezier(0.175,0.885,0.32,1.275) hover:rotate-0 hover:scale-105 hover:shadow-[8px_8px_0_var(--primary-soft),0_20px_40px_var(--shadow-strong)] float-sparkle md:max-w-[300px]">
-              <div className="w-full h-[400px] md:h-[330px] rounded-[14px] bg-primary-soft"></div>
+            <div className="relative w-full max-w-[360px] bg-surface p-3 rounded-[24px] border-[3px] border-dashed border-primary shadow-[16px_16px_0_var(--primary-soft),0_16px_40px_var(--shadow-color)] -rotate-3 transition-all duration-[0.4s] hover:rotate-0 hover:scale-105 hover:shadow-[8px_8px_0_var(--primary-soft),0_20px_40px_var(--shadow-strong)] float-sparkle md:max-w-[300px]">
+              <img
+                src={profileImg}
+                alt="Hamida Noor Kalila"
+                className="w-full h-[400px] md:h-[330px] rounded-[14px] object-cover object-top"
+              />
             </div>
           </div>
 
