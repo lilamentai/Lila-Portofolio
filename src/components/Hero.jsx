@@ -86,8 +86,6 @@ export default function Hero() {
           <div className="flex gap-3 md:justify-center">
             {[
               { icon: 'fa-github', url: 'https://github.com/lilamentai', label: 'GitHub' },
-              { icon: 'fa-instagram', url: 'https://www.instagram.com/brownieshy_/', label: 'Instagram' },
-              { icon: 'fa-tiktok', url: 'https://www.tiktok.com/@rorrwl?_r=1&_t=ZS-97rAgsXPzP8', label: 'TikTok' },
               { icon: 'fa-linkedin-in', url: 'https://www.linkedin.com/in/hamida-noor-kalila-2269b6387', label: 'LinkedIn' },
             ].map((social, idx) => (
               <a
@@ -110,8 +108,8 @@ export default function Hero() {
             isVisibleImage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
           }`}
         >
-          <div className="relative w-[320px] h-[380px] rounded-[24px] overflow-hidden border-[3px] border-border shadow-photo bg-gradient-card lg:w-[270px] lg:h-[330px] md:w-[240px] md:h-[290px] sm:w-[200px] sm:h-[250px]">
-            <img src="images/sekolah1.jpeg" alt="Profile photo of Hamida Noor Kalila" className="w-full h-full object-cover" />
+          <div className="relative w-[320px] h-[380px] rounded-[24px] overflow-hidden border-[3px] border-border shadow-photo bg-primary-soft lg:w-[270px] lg:h-[330px] md:w-[240px] md:h-[290px] sm:w-[200px] sm:h-[250px]">
+            <div className="w-full h-full bg-primary-soft"></div>
             <div className="absolute w-[60px] h-[60px] -bottom-5 -right-5 hero-deco-dots opacity-50 -z-10"></div>
           </div>
         </div>

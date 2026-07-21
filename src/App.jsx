@@ -5,7 +5,6 @@ import Journey from './components/Journey';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Favorites from './components/Favorites';
-import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
@@ -24,7 +23,6 @@ function App() {
         <Skills />
         <Projects />
         <Favorites />
-        <Gallery />
         <Contact />
       </main>
       <Footer />

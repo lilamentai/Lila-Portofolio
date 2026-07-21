@@ -6,16 +6,16 @@ export default function Contact() {
 
   const socials = [
     {
-      name: 'TikTok',
-      handle: '@rorrwl',
-      icon: 'fa-tiktok',
-      url: 'https://www.tiktok.com/@rorrwl?_r=1&_t=ZS-97rAgsXPzP8'
+      name: 'LinkedIn',
+      handle: 'Hamida Noor Kalila',
+      icon: 'fa-linkedin-in',
+      url: 'https://www.linkedin.com/in/hamida-noor-kalila-2269b6387'
     },
     {
-      name: 'Instagram',
-      handle: '@brownieshy_',
-      icon: 'fa-instagram',
-      url: 'https://www.instagram.com/brownieshy_/'
+      name: 'GitHub',
+      handle: 'lilamentai',
+      icon: 'fa-github',
+      url: 'https://github.com/lilamentai'
     }
   ];
 

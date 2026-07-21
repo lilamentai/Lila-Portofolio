@@ -161,34 +161,7 @@
     background-size: 10px 10px;
   }
 
-  /* About specific styles */
-  .about-bg-layer::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background: url('https://i.pinimg.com/736x/76/1f/4b/761f4b230841f37f3eccda51d997f505.jpg') center/cover no-repeat;
-    filter: blur(6px);
-    z-index: 0;
-  }
-
-  .about-bg-layer::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--bg-primary);
-    opacity: 0.75;
-    z-index: 0;
-  }
-  
-  [data-theme="dark"] .about-bg-layer::after {
-    opacity: 0.85;
-  }
+  /* About specific styles removed */
 
   .timeline-line::before {
     content: '';
