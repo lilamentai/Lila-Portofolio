@@ -20,11 +20,11 @@ export default function Favorites() {
       desc: "Rich, fudgy brownies — PERFECT DESSERT IN MY LIFE!."
     },
     {
-      type: 'color',
-      color: "#F9B2D7",
-      category: "Favorite Color",
-      title: "Soft Pink",
-      desc: "Gentle, warm, and calming — just like the aesthetic I love."
+      type: 'image',
+      img: "favSong.png",
+      category: "Favorite Song",
+      title: "Song",
+      desc: "One of my favorite songs."
     }
   ];
 
@@ -33,9 +33,8 @@ export default function Favorites() {
       <div className="container-custom">
         <div
           ref={refHeader}
-          className={`section-header transition-all duration-700 ease-in-out ${
-            isVisibleHeader ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
-          }`}
+          className={`section-header transition-all duration-700 ease-in-out ${isVisibleHeader ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+            }`}
         >
           <span className="section-label">Fun Facts</span>
           <h2 className="section-title">Favorite Things</h2>
@@ -44,9 +43,8 @@ export default function Favorites() {
 
         <div
           ref={refGrid}
-          className={`grid grid-cols-3 gap-6 sm:grid-cols-1 transition-all duration-700 ease-in-out ${
-            isVisibleGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
-          }`}
+          className={`grid grid-cols-3 gap-6 sm:grid-cols-1 transition-all duration-700 ease-in-out ${isVisibleGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+            }`}
         >
           {favorites.map((fav, idx) => (
             <div key={idx} className="bg-surface border border-border rounded-[18px] overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-strong group">

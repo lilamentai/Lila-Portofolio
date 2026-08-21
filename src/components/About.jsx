@@ -39,7 +39,6 @@ export default function About() {
             className={`transition-all duration-700 ease-in-out ${isVisibleText ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
               }`}
           >
-            <h3 className="font-playfair text-text-heading text-2xl mb-4">lila</h3>
             <p className="text-[0.95rem] text-text-body mb-4 leading-[1.8]">
               Sup! I'm Lila, Software Engineering yang lagi belajar dan proses jadi backend
               developer. Sekarang lagi fokus belajar JavaScript, Node.js, dan dunia coding yang sometimes
