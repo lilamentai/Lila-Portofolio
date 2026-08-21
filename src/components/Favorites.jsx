@@ -21,7 +21,7 @@ export default function Favorites() {
     },
     {
       type: 'image',
-      img: "favSong.png",
+      img: "/images/favSong.png",
       category: "Favorite Song",
       title: "Song",
       desc: "One of my favorite songs."
