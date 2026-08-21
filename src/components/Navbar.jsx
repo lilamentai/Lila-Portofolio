@@ -62,31 +62,28 @@ export default function Navbar() {
   return (
     <header>
       <nav
-        className={`fixed top-0 left-0 w-full flex items-center justify-between px-10 py-4 z-[1000] transition-all duration-300 lg:px-6 md:px-4 ${
-          scrolled
+        className={`fixed top-0 left-0 w-full flex items-center justify-between px-10 py-4 z-[1000] transition-all duration-300 lg:px-6 md:px-4 ${scrolled
             ? 'bg-navbar-bg backdrop-blur-md shadow-soft !py-3'
             : ''
-        }`}
+          }`}
       >
         <a href="#home" className="font-playfair text-[1.6rem] font-bold text-text-heading transition-colors duration-300 sm:text-[1.3rem]">
-          lila<span className="text-primary">.</span>
+          lilaao<span className="text-primary">.</span>
         </a>
 
         <ul
-          className={`flex gap-2 md:fixed md:top-0 md:right-[-100%] md:w-[280px] md:h-screen md:bg-bg-secondary md:flex-col md:pt-[80px] md:px-8 md:pb-8 md:gap-1 md:shadow-[-4px_0_20px_var(--shadow-color)] md:transition-[right] md:duration-300 md:z-[999] ${
-            menuOpen ? 'md:!right-0' : ''
-          }`}
+          className={`flex gap-2 md:fixed md:top-0 md:right-[-100%] md:w-[280px] md:h-screen md:bg-bg-secondary md:flex-col md:pt-[80px] md:px-8 md:pb-8 md:gap-1 md:shadow-[-4px_0_20px_var(--shadow-color)] md:transition-[right] md:duration-300 md:z-[999] ${menuOpen ? 'md:!right-0' : ''
+            }`}
         >
           {navLinks.map((link) => (
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
                 onClick={() => setMenuOpen(false)}
-                className={`text-[0.85rem] font-medium px-4 py-2 rounded-lg transition-all duration-300 md:text-[0.95rem] md:px-4 md:py-3 md:block ${
-                  activeSection === link.id
+                className={`text-[0.85rem] font-medium px-4 py-2 rounded-lg transition-all duration-300 md:text-[0.95rem] md:px-4 md:py-3 md:block ${activeSection === link.id
                     ? 'text-primary-deep bg-tag-bg'
                     : 'text-text-subtle hover:text-primary-deep hover:bg-tag-bg'
-                }`}
+                  }`}
               >
                 {link.label}
               </a>
