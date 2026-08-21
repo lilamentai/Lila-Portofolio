@@ -11,9 +11,8 @@ export default function About() {
       <div className="container-custom relative z-10">
         <div
           ref={refHeader}
-          className={`section-header transition-all duration-700 ease-in-out ${
-            isVisibleHeader ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
-          }`}
+          className={`section-header transition-all duration-700 ease-in-out ${isVisibleHeader ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+            }`}
         >
           <span className="section-label">About Me</span>
           <h2 className="section-title">Get to Know Me</h2>
@@ -23,14 +22,13 @@ export default function About() {
         <div className="grid grid-cols-2 gap-[60px] items-center lg:gap-10 md:grid-cols-1 md:gap-8 md:text-center">
           <div
             ref={refImage}
-            className={`relative flex justify-center py-5 md:justify-center transition-all duration-700 ease-in-out ${
-              isVisibleImage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
-            }`}
+            className={`relative flex justify-center py-5 md:justify-center transition-all duration-700 ease-in-out ${isVisibleImage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+              }`}
           >
             <div className="relative w-full max-w-[360px] bg-surface p-3 rounded-[24px] border-[3px] border-dashed border-primary shadow-[16px_16px_0_var(--primary-soft),0_16px_40px_var(--shadow-color)] -rotate-3 transition-all duration-[0.4s] hover:rotate-0 hover:scale-105 hover:shadow-[8px_8px_0_var(--primary-soft),0_20px_40px_var(--shadow-strong)] float-sparkle md:max-w-[300px]">
               <img
                 src={profileImg}
-                alt="Hamida Noor Kalila"
+                alt="lila"
                 className="w-full h-[400px] md:h-[330px] rounded-[14px] object-cover object-top"
               />
             </div>
@@ -38,11 +36,10 @@ export default function About() {
 
           <div
             ref={refText}
-            className={`transition-all duration-700 ease-in-out ${
-              isVisibleText ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
-            }`}
+            className={`transition-all duration-700 ease-in-out ${isVisibleText ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+              }`}
           >
-            <h3 className="font-playfair text-text-heading text-2xl mb-4">Hamida Noor Kalila</h3>
+            <h3 className="font-playfair text-text-heading text-2xl mb-4">lila</h3>
             <p className="text-[0.95rem] text-text-body mb-4 leading-[1.8]">
               Sup! I'm Lila, Software Engineering yang lagi belajar dan proses jadi backend
               developer. Sekarang lagi fokus belajar JavaScript, Node.js, dan dunia coding yang sometimes
@@ -62,7 +59,7 @@ export default function About() {
               development. Aku suka tantangan, dan always berusaha berkembang
               sedikit demi sedikit every single day. Semoga suatu hari nanti aku bisa bikin aplikasi yang
               nggak cuma berjalan dengan baik, tapi juga bermanfaat buat banyak orang. Until then, I'll keep
-              learning, keep building, and of course... sambil makan dimsum. 
+              learning, keep building, and of course... sambil makan dimsum.
             </p>
           </div>
         </div>

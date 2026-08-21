@@ -5,7 +5,7 @@ import heroBg from '/images/ft3.jpeg';
 export default function Hero() {
   const [refContent, isVisibleContent] = useIntersectionObserver({ triggerOnce: true, threshold: 0.15 });
   const [refImage, isVisibleImage] = useIntersectionObserver({ triggerOnce: true, threshold: 0.15 });
-  
+
   const [text, setText] = useState('');
   const phrases = [
     'Software Engineering Student',
@@ -13,7 +13,7 @@ export default function Hero() {
     'UI/UX Enthusiast',
     'Problem Solver'
   ];
-  
+
   useEffect(() => {
     let phraseIndex = 0;
     let charIndex = 0;
@@ -68,13 +68,12 @@ export default function Hero() {
       <div className="container-custom relative z-10 flex flex-col items-center text-center pt-[120px] pb-20">
         <div
           ref={refContent}
-          className={`max-w-[680px] transition-all duration-700 ease-in-out ${
-            isVisibleContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
-          }`}
+          className={`max-w-[680px] transition-all duration-700 ease-in-out ${isVisibleContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+            }`}
         >
           <p className="font-poppins text-base mb-2 hero-text-subtle">Hi There, Beautiful. 🌸</p>
           <h1 className="text-[3.2rem] mb-2 lg:text-[2.6rem] md:text-[2.4rem] sm:text-[2rem] sm:mb-1 font-playfair hero-text-heading">
-            I'm <span className="hero-text-primary">Hamida Noor Kalila</span>
+            I'm <span className="hero-text-primary">lila</span>
           </h1>
           <p className="font-poppins text-[1.15rem] font-normal hero-text-accent min-h-[32px] mb-5 sm:text-base">
             <span>{text}</span>

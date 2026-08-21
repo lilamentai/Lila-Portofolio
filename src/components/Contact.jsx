@@ -7,7 +7,7 @@ export default function Contact() {
   const socials = [
     {
       name: 'LinkedIn',
-      handle: 'Hamida Noor Kalila',
+      handle: 'lila',
       icon: 'fa-linkedin-in',
       url: 'https://www.linkedin.com/in/hamida-noor-kalila-2269b6387'
     },
