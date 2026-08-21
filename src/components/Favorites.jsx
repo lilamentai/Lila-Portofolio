@@ -24,7 +24,8 @@ export default function Favorites() {
       img: import.meta.env.BASE_URL + "images/favSong.png",
       category: "Favorite Song",
       title: "Song",
-      desc: "One of my favorite songs."
+      desc: "One of my favorite songs.",
+      imageFit: 'contain'
     }
   ];
 
@@ -48,9 +49,9 @@ export default function Favorites() {
         >
           {favorites.map((fav, idx) => (
             <div key={idx} className="bg-surface border border-border rounded-[18px] overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-strong group">
-              <div className="w-full h-[180px] overflow-hidden bg-gradient-card">
+              <div className="w-full h-[180px] overflow-hidden bg-gradient-card flex justify-center items-center">
                 {fav.type === 'image' ? (
-                  <img src={fav.img} alt={`${fav.title} — favorite`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={fav.img} alt={`${fav.title} — favorite`} className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${fav.imageFit === 'contain' ? 'object-contain p-4' : 'object-cover'}`} />
                 ) : (
                   <div className="w-full h-full transition-transform duration-500 group-hover:scale-105" style={{ backgroundColor: fav.color }} title={`${fav.title} — favorite color`}></div>
                 )}
