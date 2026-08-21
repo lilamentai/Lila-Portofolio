@@ -21,7 +21,7 @@ export default function Favorites() {
     },
     {
       type: 'image',
-      img: "/images/favSong.png",
+      img: import.meta.env.BASE_URL + "images/favSong.png",
       category: "Favorite Song",
       title: "Song",
       desc: "One of my favorite songs."
