@@ -24,9 +24,7 @@ export default function Favorites() {
       img: import.meta.env.BASE_URL + "images/favSong.png",
       category: "Favorite Song",
       title: "Song",
-      desc: "One of my favorite songs.",
-      imagePosition: 'bottom',
-      imageFit: 'contain'
+      desc: "One of my favorite songs."
     }
   ];
 
@@ -49,10 +47,10 @@ export default function Favorites() {
             }`}
         >
           {favorites.map((fav, idx) => (
-            <div key={idx} className="flex flex-col bg-surface border border-border rounded-[18px] overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-strong group">
-              <div className={`w-full overflow-hidden bg-gradient-card flex justify-center items-center ${fav.imagePosition === 'bottom' ? 'order-last mt-auto border-t border-border/50' : 'h-[180px]'}`}>
+            <div key={idx} className="bg-surface border border-border rounded-[18px] overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-strong group">
+              <div className="w-full h-[180px] overflow-hidden bg-gradient-card">
                 {fav.type === 'image' ? (
-                  <img src={fav.img} alt={`${fav.title} — favorite`} className={`w-full transition-transform duration-500 group-hover:scale-105 ${fav.imagePosition === 'bottom' ? 'h-auto max-h-[200px] object-contain py-4' : 'h-full object-cover'}`} />
+                  <img src={fav.img} alt={`${fav.title} — favorite`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 ) : (
                   <div className="w-full h-full transition-transform duration-500 group-hover:scale-105" style={{ backgroundColor: fav.color }} title={`${fav.title} — favorite color`}></div>
                 )}
